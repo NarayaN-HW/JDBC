@@ -1,0 +1,37 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.Collection;
+
+import entity.Article;
+import utils.JdbcUtils;
+
+public class ArticleDao implements JdbcDao<Article, Integer> {
+
+	private Connection dbconnection;
+	private String sqlQuery;
+
+	public ArticleDao() throws SQLException {
+		dbconnection = JdbcUtils.buildConnection();
+	}
+
+	@Override
+	public boolean save(Article article) {
+		sqlQuery = "INSERT INTO ARTICLE VALUES( ? , ? , ? , ? , ?)";
+
+		return false;
+	}
+
+	@Override
+	public Collection<Article> getAll() {
+		return null;
+	}
+
+	@Override
+	public Article getOnebyId(Integer id) {
+
+		return null;
+	}
+
+}

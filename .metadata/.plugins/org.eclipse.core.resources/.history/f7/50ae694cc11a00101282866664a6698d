@@ -1,0 +1,5 @@
+package practice.entity;
+
+public interface JDBCDao {
+
+}

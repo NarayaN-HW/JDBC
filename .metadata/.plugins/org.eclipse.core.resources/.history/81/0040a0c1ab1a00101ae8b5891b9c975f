@@ -1,0 +1,10 @@
+package example.jdbc;
+
+import java.util.Collection;
+
+// generic interface provide basic tempplates for performing crud operations
+
+public interface JdbcDao<T, K> {// T entity or table /key type
+	Collection<T> getAll();// get all obj of specific type
+
+}

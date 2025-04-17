@@ -1,0 +1,11 @@
+package dao;
+
+import java.util.Collection;
+
+public interface JdbcDao <T,K>{
+
+	boolean save(T t);
+	Collection<T> getAll();
+	T getOnebyId(K k);
+	
+}

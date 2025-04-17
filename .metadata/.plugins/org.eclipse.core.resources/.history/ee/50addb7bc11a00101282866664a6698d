@@ -1,0 +1,9 @@
+package practice.entity;
+// generic interface
+
+import java.util.Collection;
+
+public interface JDBCDao<T, k> {
+	Collection<T> getAll();
+
+}

@@ -1,0 +1,22 @@
+package example.jdbc;
+
+import java.util.Collection;
+
+public class SimpleSelectQueryMain3CRUD {
+	private static void showAllDepartments() {
+		JdbcDao<Department, Integer> dao = new DepartmentDao();
+		Collection<Department> deptlist = dao.getAll();
+//		for(Department dept : deptlist) 
+//			System.out.println(dept);
+
+		// stream api
+		deptlist.stream().forEach(dept -> System.out.println(dept));
+	}
+
+	public static void main(String[] args) {
+		
+		
+		Collection<Department> deptlist1 = dao.getOne();		
+	}
+
+}

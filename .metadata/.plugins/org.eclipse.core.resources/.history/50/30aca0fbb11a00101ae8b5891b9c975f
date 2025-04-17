@@ -1,0 +1,34 @@
+package example.jdbc;
+
+import java.util.Collection;
+
+public class DepartmentDao implements JdbcDao<Department, Integer> {// wraper class keys
+
+	@Override
+	public Collection<Department> getAll() {
+
+		return null;
+	}
+
+	@Override
+	public Department getOne(Integer deptno) {
+
+		return null;
+	}
+
+	@Override
+	public void add(Department dept) {
+
+	}
+
+	@Override
+	public void update(Department dept) {
+
+	}
+
+	@Override
+	public void delete(Department dept) {
+
+	}
+
+}

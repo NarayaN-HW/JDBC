@@ -1,0 +1,23 @@
+package example.jdbc;
+
+public class SimpleSelectQueryMain {
+
+	public static void main(String[] args) {
+		// 1 load the driver
+//		every JDBC driver is a driver implementation class
+		String driverClassName = "com.mysql.cj.jdbc.Driver";
+		// reflection forname method
+		try {
+			Class.forName(driverClassName);
+			System.out.println("Driver loaded...");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		
+		// 2 establish connection b/w DB
+		
+		
+	}
+
+}

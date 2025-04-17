@@ -1,0 +1,72 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Locale.Category;
+
+import entity.Article;
+import utils.JdbcUtils;
+
+public class ArticleDao implements JdbcDao<Article, Integer> {
+
+	private Connection dbconnection;
+	private String sqlQuery;
+	private Statement smt;
+	private PreparedStatement psmt;
+	private ResultSet rs;
+
+	public ArticleDao() throws SQLException {
+		dbconnection = JdbcUtils.buildConnection();
+	}
+
+	@Override
+	public boolean save(Article article) throws SQLException {
+		sqlQuery = "INSERT INTO ARTICLE VALUES( ? , ? , ? , ? , ?)";
+		psmt = dbconnection.prepareStatement(sqlQuery);
+		psmt.setInt(1, 0);
+		psmt.setString(2, article.getName());
+		psmt.setString(3, article.getCategory().toString());
+		psmt.setDate(4, Date.valueOf(article.getDate_created()));
+		psmt.setString(5, article.getCratorName());
+		int addCount = psmt.executeUpdate();
+		if (addCount == 0) {
+			System.out.println("not updated");
+			return false;
+		} else {
+			System.out.println(addCount + " numbers of record added");
+			return true;
+		}
+
+	}
+
+	@Override
+	public Collection<Article> getAll() throws SQLException {
+		List<Article> articles = new ArrayList<Article>();
+		sqlQuery = "SELECT * FROM ARTICLE";
+		smt = dbconnection.createStatement();
+		rs = smt.executeQuery(sqlQuery);
+		while (rs.next()) {
+			Article article = new Article(rs.getInt("ID"), rs.getString("NAME"),
+					Category.valueOf(rs.getString("category")),rs.getDate("date_created").toLocalDate(), 
+					rs.getString("creator_name"));
+			articles.add(article);
+		}
+
+		return articles;
+	}
+
+	@Override
+	public Article getOnebyId(Integer id) {
+
+		return null;
+	}
+
+}

@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+	<body bgcolor ="golden">
+		<h1>To request GreetingServlet,
+			<a herf="greet">Click Here</a>
+		</h1>
+	</body>
+</html>

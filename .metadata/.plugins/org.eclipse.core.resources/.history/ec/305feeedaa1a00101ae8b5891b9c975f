@@ -1,0 +1,6 @@
+package example.jdbc;
+
+// generic interface provide basic tempplates for performing curd operations
+public interface JdbcDao<T, K> {
+
+}

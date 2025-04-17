@@ -1,0 +1,40 @@
+package practice.entity;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class StudentDao implements JDBCDao<Student, Integer> {
+
+	@Override
+	public Collection<Student> getAll() {
+	Collection<Student> allstudent = new ArrayList<Student>();
+	try(){
+		
+	}catch (Exception e) {
+e.printStackTrace();
+	}
+		return null;
+	}
+
+	@Override
+	public Student getOne(Integer key) {
+
+		return null;
+	}
+
+	@Override
+	public void add(Student t) {
+
+	}
+
+	@Override
+	public void update(Student t) {
+
+	}
+
+	@Override
+	public void delete(Student t) {
+
+	}
+
+}

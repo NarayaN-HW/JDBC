@@ -1,0 +1,26 @@
+package dao;
+
+import java.util.Collection;
+
+import entity.Article;
+
+public class ArticleDao implements JdbcDao<Article, Integer> {
+
+	@Override
+	public boolean save(Article article) {
+		
+		return false;
+	}
+
+	@Override
+	public Collection<Article> getAll() {
+		return null;
+	}
+
+	@Override
+	public Article getOnebyId(Integer id) {
+
+		return null;
+	}
+
+}

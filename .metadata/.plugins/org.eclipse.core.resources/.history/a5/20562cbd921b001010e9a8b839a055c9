@@ -1,0 +1,57 @@
+package entity;
+
+import java.time.LocalDate;
+import java.util.Locale.Category;
+
+public class Article {
+	
+	private Integer id;
+	private String name;
+	private Catogery category;
+	private LocalDate Date_created ;
+	private String cratorName;
+	public Article(Integer id, String name, Category category2, LocalDate date_created, String cratorName) {
+		
+		this.id = id;
+		this.name = name;
+		this.category = category2;
+		Date_created = date_created;
+		this.cratorName = cratorName;
+	}
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Catogery getCategory() {
+		return category;
+	}
+	public void setCategory(Catogery category) {
+		this.category = category;
+	}
+	public LocalDate getDate_created() {
+		return Date_created;
+	}
+	public void setDate_created(LocalDate date_created) {
+		Date_created = date_created;
+	}
+	public String getCratorName() {
+		return cratorName;
+	}
+	public void setCratorName(String cratorName) {
+		this.cratorName = cratorName;
+	}
+	@Override
+	public String toString() {
+		return "Article [id=" + id + ", name=" + name + ", category=" + category + ", Date_created=" + Date_created
+				+ ", cratorName=" + cratorName + "]";
+	}
+	
+}

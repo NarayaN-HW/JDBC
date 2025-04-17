@@ -1,0 +1,21 @@
+package example.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import java.util.Collection;
+
+public class SimpleSelectQueryMain3CRUD {
+
+	public static void main(String[] args) {
+		JdbcDao<Department, Integer> dao = new DepartmentDao();
+		Collection<Department> deptlist = dao.getAll();
+		for(Department dept : deptlist) {
+			System.out.println(dept);
+		}
+	}
+
+}

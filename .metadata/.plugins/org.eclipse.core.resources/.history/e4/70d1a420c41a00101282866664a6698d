@@ -1,0 +1,74 @@
+package practice.entity;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class StudentDao implements JDBCDao<Student, Integer> {
+
+	@Override
+	public Collection<Student> getAll() {
+		Collection<Student> allstudent = new ArrayList<Student>();
+		try (Connection dbconnection = AutoLoading.buildConnection();
+				Statement smt = dbconnection.createStatement();
+				ResultSet rs = smt.executeQuery("select * from student");) {
+
+			// record display navigated
+			while (rs.next()) {
+				int id = rs.getInt(1);
+				String sName = rs.getString(2);
+				String Scity = rs.getString(3);
+				Student stud = new Student(id, sName, Scity);
+				allstudent.add(stud);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return allstudent;
+	}
+
+	@Override
+	public Student getOne(Integer key) {
+		Student foundstudent = null;
+		String sqlQuery = "select * from student where name =";
+		try (Connection dbconnection = AutoLoading.buildConnection();
+				PreparedStatement presmt = dbconnection.prepareStatement(sqlQuery);
+				ResultSet rs = presmt.executeQuery();) {
+			if (rs.next()) {
+				int id = rs.getInt("rollno");
+				String name = rs.getString("name");
+				String city = rs.getString("city");
+				foundstudent = new Student(id, name, city);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return foundstudent;
+	}
+
+	@Override
+	public void add(Student t) {
+		String sqlQuery = "select * from student where name =";
+		try (Connection dbconnection = AutoLoading.buildConnection();
+				PreparedStatement presmt = dbconnection.prepareStatement(sqlQuery);) {
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	@Override
+	public void update(Student t) {
+
+	}
+
+	@Override
+	public void delete(Student t) {
+
+	}
+
+}

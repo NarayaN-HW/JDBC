@@ -1,0 +1,13 @@
+package entity;
+
+import java.time.LocalDate;
+
+public class Article {
+	
+	private Integer id;
+	private String name;
+	private Catogery category;
+	private LocalDate Date_created ;
+	private String cratorName;
+	
+}
