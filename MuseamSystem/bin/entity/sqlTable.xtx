@@ -8,3 +8,32 @@ CATEGORY VARCHAR(10),
 DATE_CREATED DATE,
 CREATOR_NAME VARCHAR(50)
 );
+
+mysql> use cdac;
+Database changed
+mysql> select* from article;
+Empty set (0.01 sec)
+
+
+mysql> desc article;
++--------------+-------------+------+-----+---------+----------------+
+| Field        | Type        | Null | Key | Default | Extra          |
++--------------+-------------+------+-----+---------+----------------+
+| ID           | int         | NO   | PRI | NULL    | auto_increment |
+| NAME         | varchar(50) | YES  |     | NULL    |                |
+| CATEGORY     | varchar(10) | YES  |     | NULL    |                |
+| DATE_CREATED | date        | YES  |     | NULL    |                |
+| CREATOR_NAME | varchar(50) | YES  |     | NULL    |                |
++--------------+-------------+------+-----+---------+----------------+
+5 rows in set (0.03 sec)
+
+mysql> select* from article;
++----+---------+-----------+--------------+--------------+
+| ID | NAME    | CATEGORY  | DATE_CREATED | CREATOR_NAME |
++----+---------+-----------+--------------+--------------+
+|  1 | narayan | PAINTING  | 2025-04-12   | hello        |
+|  2 | shiva   | SCULPTURE | 2025-05-20   | parvati      |
++----+---------+-----------+--------------+--------------+
+2 rows in set (0.00 sec)
+
+mysql>

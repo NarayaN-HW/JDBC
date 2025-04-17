@@ -1,0 +1,53 @@
+package museamMain;
+
+import java.util.Scanner;
+import service.ArticleServices;
+
+public class ArticleMain {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		ArticleServices service = null;
+		try {
+			service = new ArticleServices();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		boolean exit = true;
+		while (exit) {
+			System.out.println("--- MENU  ---\n" + "0 : eixt \n" + "1 : Add Article \n" + "2 : Display all \n"
+					+ "3 : Get by Id \n" + "choose \n");
+			int ch = sc.nextInt();
+			switch (ch) {
+			case 0:
+				System.out.println("thankyou trial");
+				exit = false;
+				break;
+			case 1:
+				System.out.println("Add Article\n");
+				try {
+					System.out.println(
+							"Enter article name, Catogery(PAINTING, SCULPTURE, ARTIFACT),  Created date, creator name: ");
+
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				break;
+			case 2:
+				System.out.println("Add Article\n");
+
+				break;
+			case 3:
+				System.out.println("Add Article\n");
+
+				break;
+			default:
+				throw new IllegalArgumentException("Unexpected value: " + ch);
+			}
+		}
+
+	}
+
+}

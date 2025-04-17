@@ -1,0 +1,22 @@
+package service;
+
+import java.sql.SQLException;
+import java.time.LocalDate;
+
+import dao.ArticleDao;
+import entity.Article;
+import entity.Catogery;
+
+public class ArticleServices {
+	private ArticleDao dao;
+
+	public ArticleServices() throws SQLException {
+		dao = new ArticleDao();
+	}
+
+	public void addArticle(String name, Catogery category, LocalDate date_created, String cratorName)
+			throws SQLException {
+		Article newarticle = new Article(null, name, category, date_created, cratorName);
+		dao.save(newarticle);
+	}
+}

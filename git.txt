@@ -1,0 +1,260 @@
+C:\Users\CDAC\Documents\feb_2025 oops Java>git config user.name
+narayan
+
+C:\Users\CDAC\Documents\feb_2025 oops Java>git config user.email
+narayanlaxmipatil@gmail.com
+
+C:\Users\CDAC\Documents\feb_2025 oops Java>git init
+Initialized empty Git repository in C:/Users/CDAC/Documents/feb_2025 oops Java/.git/
+
+C:\Users\CDAC\Documents\feb_2025 oops Java>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .metadata/
+        JDMC_project/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\CDAC\Documents\feb_2025 oops Java>
+
+git remote add origin https://github.com/NarayaN-HW/JDBC.git
+git add .
+git commit -m "Initial commit assignment1"
+
+
+
+remote: Permission to NarayaN-HW/JDBC.git denied to AqsaGaus.
+fatal: unable to access 'https://github.com/NarayaN-HW/JDBC.git/': The requested URL returned error: 403
+if error to another 
+Control Panel\User Accounts\Credential Manager\ WINDOWS CREDITIONLAS REMOVE GIT
+
+echo "# JDBC" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/NarayaN-HW/JDBC.git
+git push -u origin main
+or
+git remote add origin https://github.com/NarayaN-HW/JDBC.git
+git branch -M main
+git push -u origin main
+
+
+
+
+
+
+
+
+___________________________________________________________________________________________________
+Microsoft Windows [Version 10.0.26100.3775]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\CDAC\Documents\feb_2025 oops Java\JDMC_project>git init
+Initialized empty Git repository in C:/Users/CDAC/Documents/feb_2025 oops Java/JDMC_project/.git/
+
+C:\Users\CDAC\Documents\feb_2025 oops Java\JDMC_project>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .classpath
+        .project
+        .settings/
+        bin/
+        git.txt
+        lib/
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\CDAC\Documents\feb_2025 oops Java\JDMC_project>git add .
+
+C:\Users\CDAC\Documents\feb_2025 oops Java\JDMC_project>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .classpath
+        new file:   .project
+        new file:   .settings/org.eclipse.core.resources.prefs
+        new file:   .settings/org.eclipse.jdt.core.prefs
+        new file:   bin/example/jdbc/Department.class
+        new file:   bin/example/jdbc/DepartmentDao.class
+        new file:   bin/example/jdbc/JDBCUtils.class
+        new file:   bin/example/jdbc/JdbcDao.class
+        new file:   bin/example/jdbc/SimpleSelectQueryMain.class
+        new file:   bin/example/jdbc/SimpleSelectQueryMain2.class
+        new file:   bin/example/jdbc/SimpleSelectQueryMain3CRUD.class
+        new file:   bin/example/jdbc/sqlquery.txt
+        new file:   bin/practice/entity/AutoLoading.class
+        new file:   bin/practice/entity/JDBCDao.class
+        new file:   bin/practice/entity/Student.class
+        new file:   bin/practice/entity/StudentDao.class
+        new file:   bin/practice/entity/StudentMain.class
+        new file:   bin/practice/sqlcreatetable
+        new file:   git.txt
+        new file:   lib/mysql-connector-java-8.0.25.jar
+        new file:   src/example/jdbc/Department.java
+        new file:   src/example/jdbc/DepartmentDao.java
+        new file:   src/example/jdbc/JDBCUtils.java
+        new file:   src/example/jdbc/JdbcDao.java
+        new file:   src/example/jdbc/SimpleSelectQueryMain.java
+        new file:   src/example/jdbc/SimpleSelectQueryMain2.java
+        new file:   src/example/jdbc/SimpleSelectQueryMain3CRUD.java
+        new file:   src/example/jdbc/sqlquery.txt
+        new file:   src/practice/entity/AutoLoading.java
+        new file:   src/practice/entity/JDBCDao.java
+        new file:   src/practice/entity/Student.java
+        new file:   src/practice/entity/StudentDao.java
+        new file:   src/practice/entity/StudentMain.java
+        new file:   src/practice/sqlcreatetable
+
+
+C:\Users\CDAC\Documents\feb_2025 oops Java\JDMC_project>git commit -m "Initial commit assignment1"
+[master (root-commit) d7ca814] Initial commit assignment1
+ 34 files changed, 799 insertions(+)
+ create mode 100644 .classpath
+ create mode 100644 .project
+ create mode 100644 .settings/org.eclipse.core.resources.prefs
+ create mode 100644 .settings/org.eclipse.jdt.core.prefs
+ create mode 100644 bin/example/jdbc/Department.class
+ create mode 100644 bin/example/jdbc/DepartmentDao.class
+ create mode 100644 bin/example/jdbc/JDBCUtils.class
+ create mode 100644 bin/example/jdbc/JdbcDao.class
+ create mode 100644 bin/example/jdbc/SimpleSelectQueryMain.class
+ create mode 100644 bin/example/jdbc/SimpleSelectQueryMain2.class
+ create mode 100644 bin/example/jdbc/SimpleSelectQueryMain3CRUD.class
+ create mode 100644 bin/example/jdbc/sqlquery.txt
+ create mode 100644 bin/practice/entity/AutoLoading.class
+ create mode 100644 bin/practice/entity/JDBCDao.class
+ create mode 100644 bin/practice/entity/Student.class
+ create mode 100644 bin/practice/entity/StudentDao.class
+ create mode 100644 bin/practice/entity/StudentMain.class
+ create mode 100644 bin/practice/sqlcreatetable
+ create mode 100644 git.txt
+ create mode 100644 lib/mysql-connector-java-8.0.25.jar
+ create mode 100644 src/example/jdbc/Department.java
+ create mode 100644 src/example/jdbc/DepartmentDao.java
+ create mode 100644 src/example/jdbc/JDBCUtils.java
+ create mode 100644 src/example/jdbc/JdbcDao.java
+ create mode 100644 src/example/jdbc/SimpleSelectQueryMain.java
+ create mode 100644 src/example/jdbc/SimpleSelectQueryMain2.java
+ create mode 100644 src/example/jdbc/SimpleSelectQueryMain3CRUD.java
+ create mode 100644 src/example/jdbc/sqlquery.txt
+ create mode 100644 src/practice/entity/AutoLoading.java
+ create mode 100644 src/practice/entity/JDBCDao.java
+ create mode 100644 src/practice/entity/Student.java
+ create mode 100644 src/practice/entity/StudentDao.java
+ create mode 100644 src/practice/entity/StudentMain.java
+ create mode 100644 src/practice/sqlcreatetable
+
+C:\Users\CDAC\Documents\feb_2025 oops Java\JDMC_project>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\CDAC\Documents\feb_2025 oops Java\JDMC_project>git branch -M main
+
+C:\Users\CDAC\Documents\feb_2025 oops Java\JDMC_project>git push -u origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\CDAC\Documents\feb_2025 oops Java\JDMC_project>https://github.com/NarayaN-HW/JDBC.git
+'https:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\CDAC\Documents\feb_2025 oops Java\JDMC_project>git remote add origin https://github.com/NarayaN-HW/JDBC.git
+
+C:\Users\CDAC\Documents\feb_2025 oops Java\JDMC_project>git push -u origin main
+remote: Permission to NarayaN-HW/JDBC.git denied to AqsaGaus.
+fatal: unable to access 'https://github.com/NarayaN-HW/JDBC.git/': The requested URL returned error: 403
+
+C:\Users\CDAC\Documents\feb_2025 oops Java\JDMC_project>git remote -v
+origin  https://github.com/NarayaN-HW/JDBC.git (fetch)
+origin  https://github.com/NarayaN-HW/JDBC.git (push)
+
+C:\Users\CDAC\Documents\feb_2025 oops Java\JDMC_project>git push -u origin main
+remote: Permission to NarayaN-HW/JDBC.git denied to AqsaGaus.
+fatal: unable to access 'https://github.com/NarayaN-HW/JDBC.git/': The requested URL returned error: 403
+
+C:\Users\CDAC\Documents\feb_2025 oops Java\JDMC_project>git credential-manager reject https://github.com
+git: 'credential-manager' is not a git command. See 'git --help'.
+
+The most similar command is
+        credential-manager-core
+
+C:\Users\CDAC\Documents\feb_2025 oops Java\JDMC_project>git config --global --unset credential.helper
+
+C:\Users\CDAC\Documents\feb_2025 oops Java\JDMC_project>git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   git.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        tomcat.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\CDAC\Documents\feb_2025 oops Java\JDMC_project>git add .
+
+C:\Users\CDAC\Documents\feb_2025 oops Java\JDMC_project>git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   git.txt
+        new file:   tomcat.txt
+
+
+C:\Users\CDAC\Documents\feb_2025 oops Java\JDMC_project>git commit -m "initial assignment1"
+[main 3613e9f] initial assignment1
+ 2 files changed, 24 insertions(+)
+ create mode 100644 tomcat.txt
+
+C:\Users\CDAC\Documents\feb_2025 oops Java\JDMC_project>git remote add origin https://github.com/NarayaN-HW/JDBC.git
+error: remote origin already exists.
+
+C:\Users\CDAC\Documents\feb_2025 oops Java\JDMC_project>git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 50, done.
+Counting objects: 100% (50/50), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (48/48), done.
+Writing objects: 100% (50/50), 2.21 MiB | 4.41 MiB/s, done.
+Total 50 (delta 7), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (7/7), done.
+To https://github.com/NarayaN-HW/JDBC.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+________________________________________==============================================
+C:\Users\CDAC\Documents\feb_2025 oops Java\JDMC_project>git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\CDAC\Documents\feb_2025 oops Java>git push -u origin main
+To https://github.com/NarayaN-HW/JDBC.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/NarayaN-HW/JDBC.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\CDAC\Documents\feb_2025 oops Java>git push -u origin main --force
+
+C:\Users\CDAC\Documents\feb_2025 oops Java>
+C:\Users\CDAC\Documents\feb_2025 oops Java>git push -u origin main --force
