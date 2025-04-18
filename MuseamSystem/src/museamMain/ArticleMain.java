@@ -19,8 +19,8 @@ public class ArticleMain {
 
 		boolean exit = true;
 		while (exit) {
-			System.out.println("--- MENU  ---\n" + "0 : eixt \n" + "1 : Add Article \n" + "2 : Display all \n"
-					+ "3 : Get by Id \n" + "choose \n");
+			System.out.println("--- MENU  ---\n" + "0 : eixt \n" + "" + "1 : Add Article \n" + "2 : Display all \n"
+					+ "3 : Get by Id \n" + "4 : Delete by Id\n " + "5 : Update article\n" + "choose \n");
 			int ch = sc.nextInt();
 			switch (ch) {
 			case 0:
@@ -40,7 +40,7 @@ public class ArticleMain {
 				}
 				break;
 			case 2:
-				System.out.println("Add Article\n");
+				System.out.println("Get all Article\n");
 				try {
 					service.displayGetall();
 				} catch (Exception e) {
@@ -49,7 +49,7 @@ public class ArticleMain {
 				}
 				break;
 			case 3:
-				System.out.println("Add Article\n");
+				System.out.println("get one Article\n");
 				System.out.println("Enter id: ");
 				try {
 					service.displayGetonebyID(sc.nextInt());
@@ -57,6 +57,40 @@ public class ArticleMain {
 					System.out.println(e.getMessage());
 				}
 				break;
+
+			case 4:
+				System.out.println("delete Article\n");
+				System.out.println("Enter id: ");
+				try {
+					service.deleteRecord(sc.nextInt());
+				} catch (Exception e) {
+					System.out.println(e.getMessage());
+				}
+				break;
+			case 5:
+				System.out.println("update Article\n");
+
+				try {
+					System.out.println("Enter article ID: ");
+					int id = sc.nextInt();
+					sc.nextLine();
+					System.out.println("Enter updated article name: ");
+					String name = sc.nextLine();
+					System.out.println("Enter updated category (PAINTING, SCULPTURE, ARTIFACT): ");
+					Catogery category = Catogery.valueOf(sc.next().toUpperCase());
+					System.out.println("Enter updated created date (yyyy-mm-dd): ");
+					LocalDate date = LocalDate.parse(sc.next());
+					sc.nextLine();
+					System.out.println("Enter updated creator name: ");
+					String creatorName = sc.nextLine();
+
+					service.updateRecordArticle(id, category, date, name, creatorName);
+
+				} catch (Exception e) {
+					System.out.println(e.getMessage());
+				}
+				break;
+
 			default:
 				throw new IllegalArgumentException("Unexpected value: " + ch);
 			}

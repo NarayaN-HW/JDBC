@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Insert title here</title>
+</head>
+<body bgcolor="lightblue">
+	<h2>Search Department</h2>
+	<form action="/SearchLoc" method="post">
+		<label for="location"><strong> Location Search:</strong></label> <br>
+		<input type="text" id="location" name="location"
+		
+			style="background-color: pink; color: black;"> <br> <input
+			type="Submit" value="SEARCH" />
+	</form>
+</body>
+</html>

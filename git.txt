@@ -1,3 +1,11 @@
+git init
+git status
+git add .
+git status 
+git commit -m "assignment"
+git push -u origin main
+
+
 C:\Users\CDAC\Documents\feb_2025 oops Java>git config user.name
 narayan
 

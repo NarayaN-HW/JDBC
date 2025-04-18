@@ -1,0 +1,29 @@
+mysql> use cdac;
+Database changed
+mysql>
+
+
+create table department(
+deptNo int primary key,
+dName Varchar(20),
+location Varchar(20)
+);
+
+mysql> use cdac;
+Database changed
+mysql> create table department(
+    -> deptNo int primary key,
+    -> dName Varchar(20),
+    -> location Varchar(20)
+    -> );
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> desc department;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| deptNo   | int         | NO   | PRI | NULL    |       |
+| dName    | varchar(20) | YES  |     | NULL    |       |
+| location | varchar(20) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+3 rows in set (0.03 sec)

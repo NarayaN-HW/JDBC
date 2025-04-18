@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>Search Department</h2>
+	<form action="addDept" method="post">
+		<label for="deptNo">Department Number:</label> <br> <input
+			type="text" id="deptNo" name="deptNo"
+			style="background-color: pink; color: black;"> <br>
+	</form>
+</body>
+</html>

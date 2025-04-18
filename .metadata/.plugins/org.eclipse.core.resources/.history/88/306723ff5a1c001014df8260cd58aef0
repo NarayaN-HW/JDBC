@@ -1,0 +1,113 @@
+package practice.entity;
+
+import java.util.Collection;
+import java.util.Scanner;
+
+public class StudentMain {
+
+    public static void showAllStudent() {
+        JDBCDao<Student, Integer> dao = new StudentDao();
+        Collection<Student> stdList = dao.getAll();
+        for (Student std : stdList) {
+            System.out.println(std);
+        }
+    }
+
+    public static void showOneStudent(int studId) {
+        JDBCDao<Student, Integer> dao = new StudentDao();
+        Student student = dao.getOne(studId);
+        if (student != null)
+            System.out.println(student);
+        else
+            System.err.println("Student not found for ID: " + studId);
+    }
+
+    public static void addStudent(int id, String name, String city) {
+        JDBCDao<Student, Integer> dao = new StudentDao();
+        Student student = new Student(id, name, city);
+        dao.add(student);
+        System.out.println("Student added successfully.");
+    }
+
+    public static void removeStudent(Integer id) {
+        JDBCDao<Student, Integer> dao = new StudentDao();
+        dao.delete(id);
+        System.out.println("Student removed successfully.");
+    }
+
+    public static void updateStudent(int id, String name, String city) {
+        JDBCDao<Student, Integer> dao = new StudentDao();
+        Student student = new Student(id, name, city);
+        dao.update(student);
+        System.out.println("Student updated successfully.");
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        boolean running = true;
+
+        while (running) {
+            System.out.println("\n--- MENU ---");
+            System.out.println("0 : Exit");
+            System.out.println("1 : Add Student");
+            System.out.println("2 : Display All Students");
+            System.out.println("3 : Get Specific Student");
+            System.out.println("4 : Remove Student");
+            System.out.println("5 : Update Student");
+            System.out.print("Enter your choice: ");
+
+            int choice = sc.nextInt();
+            sc.nextLine(); // consume leftover newline
+
+            switch (choice) {
+                case 0:
+                    System.out.println("Thank you for using the application!");
+                    running = false;
+                    break;
+
+                case 1:
+                    System.out.println("Enter student ID:");
+                    int id = sc.nextInt();
+                    sc.nextLine();
+                    System.out.println("Enter student name:");
+                    String name = sc.nextLine();
+                    System.out.println("Enter student city:");
+                    String city = sc.nextLine();
+                    addStudent(id, name, city);
+                    break;
+
+                case 2:
+                    showAllStudent();
+                    break;
+
+                case 3:
+                    System.out.println("Enter student ID to search:");
+                    int sid = sc.nextInt();
+                    showOneStudent(sid);
+                    break;
+
+                case 4:
+                    System.out.println("Enter student ID to remove:");
+                    int rid = sc.nextInt();
+                    removeStudent(rid);
+                    break;
+
+                case 5:
+                    System.out.println("Enter student ID to update:");
+                    int uid = sc.nextInt();
+                    sc.nextLine();
+                    System.out.println("Enter new name:");
+                    String newName = sc.nextLine();
+                    System.out.println("Enter new city:");
+                    String newCity = sc.nextLine();
+                    updateStudent(uid, newName, newCity);
+                    break;
+
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+            }
+        }
+
+        sc.close();
+    }
+}

@@ -1,0 +1,10 @@
+mysql> use cdac;
+Database changed
+mysql>
+
+
+create table department(
+deptNo int primary key,
+dName Varchar(20),
+location Varchar(20)
+);

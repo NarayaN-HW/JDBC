@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Form</title>
+</head>
+<body>
+	<h1>Welcome to servlets</h1>
+	<form>
+		<pre>
+			<h2>First Name:</h2>
+			<input type="text" name="firstName"
+				style="background-color: pink; color: red" />
+			
+			<h2>Last Name:</h2>
+			<input type="text" name="lastName"
+				style="background-color: pink; color: red" />
+			
+			<h2>Email Address:</h2>
+			<input type="text" name="emailAddress"
+				style="background-color: pink; color: red" />
+				
+			<input type="submit" value="Submit" />
+		</pre>
+	</form>
+</body>
+</html>

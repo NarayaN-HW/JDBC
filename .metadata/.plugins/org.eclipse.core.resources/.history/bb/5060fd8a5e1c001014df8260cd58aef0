@@ -1,0 +1,88 @@
+package museamMain;
+
+import java.time.LocalDate;
+import java.util.Scanner;
+import service.ArticleServices;
+import entity.Catogery;
+
+public class ArticleMain {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		ArticleServices service = null;
+		try {
+			service = new ArticleServices();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		boolean exit = true;
+		while (exit) {
+			System.out.println("--- MENU  ---\n" + "0 : eixt \n" + "1 : Add Article \n" + "2 : Display all \n"
+					+ "3 : Get by Id \n" + "choose \n");
+			int ch = sc.nextInt();
+			switch (ch) {
+			case 0:
+				System.out.println("thankyou trial");
+				sc.close();
+				exit = false;
+				break;
+			case 1:
+				System.out.println("Add Article\n");
+				try {
+					System.out.println(
+							"Enter article name, Catogery(PAINTING, SCULPTURE, ARTIFACT),  Created date, creator name: ");
+					service.addArticle(sc.next(), Catogery.valueOf(sc.next()), LocalDate.parse(sc.next()), sc.next());
+
+				} catch (Exception e) {
+					System.out.println(e.getMessage());
+				}
+				break;
+			case 2:
+				System.out.println("Add Article\n");
+				try {
+					service.displayGetall();
+				} catch (Exception e) {
+
+					System.out.println(e.getMessage());
+				}
+				break;
+			case 3:
+				System.out.println("delete Article\n");
+				System.out.println("Enter id: ");
+				try {
+					service.deleteRecord(sc.nextInt());
+				} catch (Exception e) {
+					System.out.println(e.getMessage());
+				}
+				break;
+			case 4:
+				System.out.println("update Article\n");
+		
+				try {
+					System.out.println(
+							"Enter article name, Catogery(PAINTING, SCULPTURE, ARTIFACT),  Created date, creator name: ");
+					service.updateRecordArticle(sc.next(), Catogery.valueOf(sc.next()), LocalDate.parse(sc.next()), sc.next());
+
+				} catch (Exception e) {
+					System.out.println(e.getMessage());
+				}
+				break;
+			case 5:
+				System.out.println("Add Article\n");
+				System.out.println("Enter id: ");
+				try {
+					service.displayGetonebyID(sc.nextInt());
+				} catch (Exception e) {
+					System.out.println(e.getMessage());
+				}
+				break;
+			default:
+				throw new IllegalArgumentException("Unexpected value: " + ch);
+			}
+		}
+
+	}
+
+}

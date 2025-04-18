@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>Department Entry Form</h2>
+	<form action="">
+		<pre>	
+			<label for="deptNo">Department Number:</label>
+        <input type="text" id="deptNo" name="deptNo" 
+               style="background-color: pink; color: black;"><br><br>
+
+        <label for="deptName">Department Name:</label>
+        <input type="text" id="deptName" name="deptName" 
+               style="background-color: pink; color: black;"><br><br>
+
+        <label for="location">Location:</label>
+        <select name="location">
+        <option value="Shahada">Shahada</option>
+        <option value="Nashik">Nashik</option>
+        <option value="Pune">Pune</option>
+        <option value="kedarnath">Kedarnath</option>
+        <option value="Mumbai">Mumbai</option>
+        </select>
+
+        <input type="submit" value="Submit">
+		</pre>
+	</form>
+</body>
+</html>

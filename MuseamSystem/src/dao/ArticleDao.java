@@ -77,4 +77,39 @@ public class ArticleDao implements JdbcDao<Article, Integer> {
 		return foundArticle;
 	}
 
+	@Override
+	public void update(Article article) {
+		String sqlQuery = "UPDATE ARTICLE SET name = ?, category = ?, date_created = ?, creator_name = ? WHERE id = ?";
+
+		try (PreparedStatement psmt = dbconnection.prepareStatement(sqlQuery)) {
+			psmt.setString(1, article.getName());
+			psmt.setString(2, article.getCategory().toString());
+			psmt.setDate(3, Date.valueOf(article.getDate_created()));
+			psmt.setString(4, article.getCratorName());
+			psmt.setInt(5, article.getId());
+
+			int count = psmt.executeUpdate();
+			System.out.println(count + " article(s) updated.");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public void delete(Integer id) {
+		String sqlQuery = "DELETE FROM article WHERE id = ?";
+		try (Connection dbConnection = JdbcUtils.buildConnection();
+				PreparedStatement psmt = dbConnection.prepareStatement(sqlQuery)) {
+
+			psmt.setInt(1, id);
+			int count = psmt.executeUpdate();
+			if (count > 0)
+				System.out.println(count + " article(s) deleted.");
+			else
+				System.out.println("No article found with ID: " + id);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
 }

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+</head>
+<body bgcolor="Aquamarine">
+    <h1>Enquiry Form</h1>
+
+    <form action="/doEnquire" method="post">
+        <label for="firstName"><h2>First Name:</h2></label>
+        <input type="text" id="firstName" name="firstName" 
+               style="background-color: pink; color: red;"><br><br>
+
+        <label for="lastName"><h2>Last Name:</h2></label>
+        <input type="text" id="lastName" name="lastName" 
+               style="background-color: pink; color: red;"><br><br>
+
+        <label for="emailAddress"><h2>Email Address:</h2></label>
+        <input type="text" id="emailAddress" name="emailAddress" 
+               style="background-color: pink; color: red;"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

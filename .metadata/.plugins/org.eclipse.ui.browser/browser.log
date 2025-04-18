@@ -1,0 +1,6 @@
+
+Apr 18, 2025 15:03:36.48 NEW SESSION
+Apr 18, 2025 15:03:36.51 [GFX1-]: Failed to connect WebRenderBridgeChild. isParent=false
+Apr 18, 2025 16:08:53.12 [1696:3028:0418/160853.121:ERROR:app_bound_encryption_provider_win.cc(131)] Unable to decrypt key. Result: Error (0x13D) while retrieving error. (0x8004A003) GetLastError: 2148073483
+Apr 18, 2025 16:08:53.19 [1696:9456:0418/160853.199:ERROR:edge_auth_errors.cc(531)] EDGE_IDENTITY: Get Default OS Account failed: Error: Primary Error: kImplicitSignInFailure, Secondary Error: kAccountProviderFetchError, Platform error: 0, Error string: 
+Apr 18, 2025 16:08:53.20 

@@ -47,4 +47,16 @@ public class ArticleServices {
 		else
 			throw new ResourceNotFoundArticle("Arrticle not found id: " + id);
 	}
+
+	public void deleteRecord(Integer id) {
+		dao.delete(id);
+		System.out.println("Student removed successfully.");
+	}
+
+	public void updateRecordArticle(int id, Catogery cat, LocalDate date, String name, String Creatorname) {
+		Article article = new Article(id, name, cat, date, Creatorname);
+		dao.update(article);
+		System.out.println("Article updated successfully.");
+	}
+
 }

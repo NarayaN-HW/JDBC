@@ -1,0 +1,19 @@
+use cdac;
+Database changed
+mysql> select * from dept;
++--------+------------+----------+
+| deptno | dname      | loc      |
++--------+------------+----------+
+|     10 | ACCOUNTING | NEW YORK |
+|     20 | RESEARCH   | DALLAS   |
+|     30 | SALES      | CHICAGO  |
+|     40 | OPERATIONS | BOSTON   |
+|     50 | narayan    | nashik   |
+|     50 | narayan    | nashik   |
++--------+------------+----------+
+6 rows in set (0.01 sec)
+
+mysql> delete from dept where deptno = 50;
+Query OK, 2 rows affected (0.00 sec)
+
+mysql>

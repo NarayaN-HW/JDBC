@@ -8,5 +8,7 @@ public interface JdbcDao <T,K>{
 	boolean save(T t) throws SQLException;
 	Collection<T> getAll() throws SQLException;
 	T getOnebyId(K k) throws SQLException;
-	
+	void update(T t);
+
+	void delete(K k);
 }
