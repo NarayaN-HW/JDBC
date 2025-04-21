@@ -4,3 +4,58 @@ Apr 18, 2025 15:03:36.51 [GFX1-]: Failed to connect WebRenderBridgeChild. isPare
 Apr 18, 2025 16:08:53.12 [1696:3028:0418/160853.121:ERROR:app_bound_encryption_provider_win.cc(131)] Unable to decrypt key. Result: Error (0x13D) while retrieving error. (0x8004A003) GetLastError: 2148073483
 Apr 18, 2025 16:08:53.19 [1696:9456:0418/160853.199:ERROR:edge_auth_errors.cc(531)] EDGE_IDENTITY: Get Default OS Account failed: Error: Primary Error: kImplicitSignInFailure, Secondary Error: kAccountProviderFetchError, Platform error: 0, Error string: 
 Apr 18, 2025 16:08:53.20 
+
+Apr 19, 2025 11:49:33.78 NEW SESSION
+Apr 19, 2025 11:49:33.79 [GFX1-]: Failed to connect WebRenderBridgeChild. isParent=false
+Apr 19, 2025 11:50:08.80 [GFX1-]: Failed to connect WebRenderBridgeChild. isParent=false
+Apr 19, 2025 13:06:05.74 [1236:2928:0419/130605.744:ERROR:app_bound_encryption_provider_win.cc(131)] Unable to decrypt key. Result: Error (0x13D) while retrieving error. (0x8004A003) GetLastError: 2148073483
+Apr 19, 2025 13:06:05.81 [1236:2480:0419/130605.817:ERROR:edge_auth_errors.cc(531)] EDGE_IDENTITY: Get Default OS Account failed: Error: Primary Error: kImplicitSignInFailure, Secondary Error: kAccountProviderFetchError, Platform error: 0, Error string: 
+Apr 19, 2025 13:06:05.81 
+Apr 19, 2025 15:46:26.56 [8416:17328:0419/154626.564:ERROR:app_bound_encryption_provider_win.cc(116)] Unable to decrypt key. Result: Error (0x13D) while retrieving error. (0x8004A003) GetLastError: 2148073483
+Apr 19, 2025 15:46:28.64 Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 19, 2025 15:46:28.64 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+Apr 19, 2025 15:47:04.83 [7412:13196:0419/154704.829:ERROR:app_bound_encryption_provider_win.cc(116)] Unable to decrypt key. Result: Error (0x13D) while retrieving error. (0x8004A003) GetLastError: 2148073483
+Apr 19, 2025 15:47:06.92 Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 19, 2025 15:47:06.92 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+
+Apr 19, 2025 15:59:24.02 NEW SESSION
+Apr 19, 2025 15:59:24.03 [2940:14104:0419/155924.025:ERROR:app_bound_encryption_provider_win.cc(116)] Unable to decrypt key. Result: Error (0x13D) while retrieving error. (0x8004A003) GetLastError: 2148073483
+Apr 19, 2025 15:59:26.08 Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 19, 2025 15:59:26.08 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+Apr 19, 2025 16:02:49.94 [6408:4876:0419/160249.944:ERROR:app_bound_encryption_provider_win.cc(116)] Unable to decrypt key. Result: Error (0x13D) while retrieving error. (0x8004A003) GetLastError: 2148073483
+Apr 19, 2025 16:02:52.05 Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 19, 2025 16:02:52.05 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+
+Apr 21, 2025 08:06:19.79 NEW SESSION
+Apr 21, 2025 08:06:19.80 [17260:7380:0421/080619.791:ERROR:app_bound_encryption_provider_win.cc(116)] Unable to decrypt key. Result: Error (0x13D) while retrieving error. (0x8004A003) GetLastError: 2148073483
+Apr 21, 2025 08:07:47.44 [11248:14084:0421/080747.442:ERROR:app_bound_encryption_provider_win.cc(116)] Unable to decrypt key. Result: Error (0x13D) while retrieving error. (0x8004A003) GetLastError: 2148073483
+Apr 21, 2025 08:07:51.91 Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 21, 2025 08:07:51.92 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+Apr 21, 2025 08:12:23.49 [14924:3260:0421/081223.490:ERROR:app_bound_encryption_provider_win.cc(116)] Unable to decrypt key. Result: Error (0x13D) while retrieving error. (0x8004A003) GetLastError: 2148073483
+Apr 21, 2025 08:12:26.20 Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 21, 2025 08:12:26.21 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+Apr 21, 2025 08:26:06.75 [1816:9204:0421/082606.753:ERROR:app_bound_encryption_provider_win.cc(116)] Unable to decrypt key. Result: Error (0x13D) while retrieving error. (0x8004A003) GetLastError: 2148073483
+Apr 21, 2025 08:26:08.82 Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 21, 2025 08:26:08.82 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+Apr 21, 2025 08:26:31.59 [16696:1756:0421/082631.590:ERROR:app_bound_encryption_provider_win.cc(116)] Unable to decrypt key. Result: Error (0x13D) while retrieving error. (0x8004A003) GetLastError: 2148073483
+Apr 21, 2025 08:27:17.21 [2140:15044:0421/082717.217:ERROR:app_bound_encryption_provider_win.cc(116)] Unable to decrypt key. Result: Error (0x13D) while retrieving error. (0x8004A003) GetLastError: 2148073483
+Apr 21, 2025 08:27:58.11 [18268:6088:0421/082758.119:ERROR:app_bound_encryption_provider_win.cc(116)] Unable to decrypt key. Result: Error (0x13D) while retrieving error. (0x8004A003) GetLastError: 2148073483
+
+Apr 21, 2025 08:28:43.45 NEW SESSION
+Apr 21, 2025 08:28:43.46 [10256:16940:0421/082843.452:ERROR:app_bound_encryption_provider_win.cc(116)] Unable to decrypt key. Result: Error (0x13D) while retrieving error. (0x8004A003) GetLastError: 2148073483
+Apr 21, 2025 08:28:45.56 Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 21, 2025 08:28:45.56 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+Apr 21, 2025 08:28:57.04 [13712:12564:0421/082857.041:ERROR:app_bound_encryption_provider_win.cc(116)] Unable to decrypt key. Result: Error (0x13D) while retrieving error. (0x8004A003) GetLastError: 2148073483
+Apr 21, 2025 08:28:59.22 Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 21, 2025 08:28:59.22 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+Apr 21, 2025 08:29:34.70 [3584:10424:0421/082934.707:ERROR:app_bound_encryption_provider_win.cc(116)] Unable to decrypt key. Result: Error (0x13D) while retrieving error. (0x8004A003) GetLastError: 2148073483
+Apr 21, 2025 08:31:14.37 [11696:9744:0421/083114.375:ERROR:app_bound_encryption_provider_win.cc(116)] Unable to decrypt key. Result: Error (0x13D) while retrieving error. (0x8004A003) GetLastError: 2148073483
+Apr 21, 2025 08:31:52.16 [5160:11720:0421/083152.166:ERROR:app_bound_encryption_provider_win.cc(116)] Unable to decrypt key. Result: Error (0x13D) while retrieving error. (0x8004A003) GetLastError: 2148073483
+Apr 21, 2025 08:31:54.26 Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 21, 2025 08:31:54.26 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+Apr 21, 2025 08:32:01.59 [16168:9484:0421/083201.595:ERROR:app_bound_encryption_provider_win.cc(116)] Unable to decrypt key. Result: Error (0x13D) while retrieving error. (0x8004A003) GetLastError: 2148073483
+Apr 21, 2025 08:32:03.71 Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 21, 2025 08:32:03.71 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+
+Apr 21, 2025 08:33:01.87 NEW SESSION
+Apr 21, 2025 08:33:01.88 [14580:14416:0421/083301.878:ERROR:app_bound_encryption_provider_win.cc(116)] Unable to decrypt key. Result: Error (0x13D) while retrieving error. (0x8004A003) GetLastError: 2148073483

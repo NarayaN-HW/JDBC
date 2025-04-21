@@ -7,7 +7,7 @@ public class Department {
 	private String loc;
 
 	public Department() {
-
+		System.out.println("Inside Department()");
 	}
 
 	public Department(int deptNo, String dName, String loc) {
@@ -18,10 +18,12 @@ public class Department {
 	}
 
 	public int getDeptNo() {
+		System.out.println("indside Get deptno()");
 		return deptNo;
 	}
 
 	public void setDeptNo(int deptNo) {
+		System.out.println("indside Set deptno()");
 		this.deptNo = deptNo;
 	}
 

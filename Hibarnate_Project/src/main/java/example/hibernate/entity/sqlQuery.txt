@@ -1,0 +1,8 @@
+mysql> create database box_office;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> use box_office;
+Database changed
+
+mysql> show tables;
+Empty set (0.03 sec)
