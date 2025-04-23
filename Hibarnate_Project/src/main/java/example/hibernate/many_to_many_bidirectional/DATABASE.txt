@@ -1,0 +1,76 @@
+
+mysql>  show tables;
++--------------------------------+
+| Tables_in_association_mapping  |
++--------------------------------+
+| candidate_certification_master |
+| candidate_master               |
+| certification_master           |
+| credit_card_master             |
+| customer_master                |
+| employee_master                |
+| passport_master                |
++--------------------------------+
+7 rows in set (0.00 sec)
+
+mysql> desc certification_master;
++--------------------+--------------+------+-----+---------+-------+
+| Field              | Type         | Null | Key | Default | Extra |
++--------------------+--------------+------+-----+---------+-------+
+| certification_code | varchar(5)   | NO   | PRI | NULL    |       |
+| name               | varchar(255) | YES  |     | NULL    |       |
++--------------------+--------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> desc candidate_master;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| candidateId | int          | NO   | PRI | NULL    |       |
+| cNames      | varchar(255) | YES  |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> select * from candidate_master;
++-------------+---------+
+| candidateId | cNames  |
++-------------+---------+
+|         101 | narayan |
+|         102 | yana    |
++-------------+---------+
+2 rows in set (0.00 sec)
+
+mysql> select * from certification_master;
+Empty set (0.00 sec)
+
+mysql> select * from certification_master;
++--------------------+---------------------+
+| certification_code | name                |
++--------------------+---------------------+
+| AA                 | AWS ADMIN           |
+| MCD                | MICROSOFT CERTIFIED |
+| SM                 | SCRUM MASTER        |
++--------------------+---------------------+
+3 rows in set (0.00 sec)
+
+mysql> select * from certification_master;
++--------------------+---------------------+
+| certification_code | name                |
++--------------------+---------------------+
+| AA                 | AWS ADMIN           |
+| MCD                | MICROSOFT CERTIFIED |
+| SM                 | SCRUM MASTER        |
++--------------------+---------------------+
+3 rows in set (0.00 sec)
+
+mysql> select * frOM CANDIDATE_CERTIFICATION_master;
++---------+----------+
+| cand_Id | certi_id |
++---------+----------+
+|     101 | AA       |
+|     101 | SM       |
+|     102 | AA       |
+|     102 | SM       |
+|     102 | MCD      |
++---------+----------+
+5 rows in set (0.00 sec)

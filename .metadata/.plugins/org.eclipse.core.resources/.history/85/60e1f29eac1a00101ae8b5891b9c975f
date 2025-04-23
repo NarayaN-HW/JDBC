@@ -1,7 +1,0 @@
-package example.jdbc;
-
-public class Department {
-	public Department() {
-
-	}
-}

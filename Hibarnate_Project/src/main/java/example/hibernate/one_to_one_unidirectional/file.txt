@@ -1,0 +1,142 @@
+
+mysql> create database association_mapping;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> show databases;
++-------------------------------+
+| Database                      |
++-------------------------------+
+| air_ticket_reservation_system |
+| association_mapping           |
+| bollywood                     |
+| box_office                    |
+| cdac                          |
+| college                       |
+| demo_crud                     |
+| dotnet_shop                   |
+| emp                           |
+| exam                          |
+| information_schema            |
+| lab                           |
+| lib                           |
+| library                       |
+| lnt                           |
+| met                           |
+| movieflix                     |
+| museum                        |
+| mycdac                        |
+| mydatabase                    |
+| mysql                         |
+| net                           |
+| ok                            |
+| performance_schema            |
+| sakila                        |
+| shop                          |
+| stockdb                       |
+| sys                           |
+| world                         |
+| zomato                        |
++-------------------------------+
+30 rows in set (0.01 sec)
+
+mysql> use assocation_mapping;
+ERROR 1049 (42000): Unknown database 'assocation_mapping'
+mysql> use association_mapping;
+Database changed
+mysql> show tables;
++-------------------------------+
+| Tables_in_association_mapping |
++-------------------------------+
+| employee_master               |
+| passport_master               |
++-------------------------------+
+2 rows in set (0.01 sec)
+
+mysql> select * from passport_master;
++-------------+-------------------+----------------------+
+| passport_no | passport_exp_date | passport_holder_Name |
++-------------+-------------------+----------------------+
+| p001        | 2029-09-12        | narayan patil        |
+| p002        | 2030-09-12        | shiva                |
++-------------+-------------------+----------------------+
+2 rows in set (0.00 sec)
+
+mysql> desc passport_master;
++----------------------+-------------+------+-----+---------+-------+
+| Field                | Type        | Null | Key | Default | Extra |
++----------------------+-------------+------+-----+---------+-------+
+| passport_no          | varchar(30) | NO   | PRI | NULL    |       |
+| passport_exp_date    | date        | YES  |     | NULL    |       |
+| passport_holder_Name | varchar(30) | YES  |     | NULL    |       |
++----------------------+-------------+------+-----+---------+-------+
+3 rows in set (0.01 sec)
+
+mysql> select * from employee_master;
++--------+----------+---------+-------------+
+| emp_no | emp_name | emp_sal | passport_no |
++--------+----------+---------+-------------+
+|      8 | narayana |  500000 | NULL        |
+|     16 | nevdaa   |  600000 | NULL        |
++--------+----------+---------+-------------+
+2 rows in set (0.00 sec)
+
+mysql> select * from employee_master;
++--------+----------+---------+-------------+
+| emp_no | emp_name | emp_sal | passport_no |
++--------+----------+---------+-------------+
+|      8 | narayana |  500000 | p001        |
+|     16 | nevdaa   |  600000 | p002        |
++--------+----------+---------+-------------+
+2 rows in set (0.00 sec)
+
+mysql> desc credit_card_master;
++------------------+--------------+------+-----+---------+-------+
+| Field            | Type         | Null | Key | Default | Extra |
++------------------+--------------+------+-----+---------+-------+
+| card_no          | varchar(30)  | NO   | PRI | NULL    |       |
+| card_bankName    | varchar(30)  | YES  |     | NULL    |       |
+| credit_Limit     | int          | YES  |     | NULL    |       |
+| card_Holder_Name | varchar(30)  | YES  |     | NULL    |       |
+| card_type        | varchar(30)  | YES  |     | NULL    |       |
+| customer_id      | varchar(255) | YES  | MUL | NULL    |       |
++------------------+--------------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
+
+
+mysql> select * from credit_card_master;
++---------+---------------+--------------+------------------+------------+-------------+
+| card_no | card_bankName | credit_Limit | card_Holder_Name | card_type  | customer_id |
++---------+---------------+--------------+------------------+------------+-------------+
+| 01      | none          |     50000000 | Shiva            | God        | NULL        |
+| 10      | AXIS          |      2000000 | yana             | Rupa       | NULL        |
+| 20      | ICICI         |      4000000 | nara             | VISA       | NULL        |
+| 30      | HDFC          |      3000000 | NEVDA            | VISA       | NULL        |
+| 99      | sbi           |      2000000 | narayana         | MASTERCARD | NULL        |
++---------+---------------+--------------+------------------+------------+-------------+
+5 rows in set (0.00 sec)
+
+
+
+mysql> desc customer_master;;
++--------------+--------------+------+-----+---------+-------+
+| Field        | Type         | Null | Key | Default | Extra |
++--------------+--------------+------+-----+---------+-------+
+| customer_id  | varchar(255) | NO   | PRI | NULL    |       |
+| emailAddress | varchar(255) | YES  |     | NULL    |       |
+| name         | varchar(255) | YES  |     | NULL    |       |
++--------------+--------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+ERROR:
+No query specified
+
+mysql> select * from customer_master;
++-------------+--------------------+----------+
+| customer_id | emailAddress       | name     |
++-------------+--------------------+----------+
+| c111        | narayana@gmail.com | narayana |
+| c222        | yana@gmail.com     | yana     |
+| c333        | nevda@gmail.com    | NEVDA    |
+| c444        | Shiva@gmail.com    | Shiva    |
++-------------+--------------------+----------+
+4 rows in set (0.00 sec)

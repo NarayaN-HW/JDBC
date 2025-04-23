@@ -1,5 +1,0 @@
-package example.jdbc;
-
-public class DepartmentDao implements JdbcDao<Department, int>{
-
-}

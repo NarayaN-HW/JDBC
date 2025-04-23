@@ -59,3 +59,6 @@ Apr 21, 2025 08:32:03.71 Attempting to use a delegate that only supports static-
 
 Apr 21, 2025 08:33:01.87 NEW SESSION
 Apr 21, 2025 08:33:01.88 [14580:14416:0421/083301.878:ERROR:app_bound_encryption_provider_win.cc(116)] Unable to decrypt key. Result: Error (0x13D) while retrieving error. (0x8004A003) GetLastError: 2148073483
+
+Apr 21, 2025 19:08:56.75 NEW SESSION
+Apr 21, 2025 19:08:56.76 [GFX1-]: Failed to connect WebRenderBridgeChild. isParent=false

@@ -1,0 +1,53 @@
+create database  Air_Ticket_Reservation_System; 
+
+create table user(
+user_id int primary key auto_increment,
+user_name varchar(30),
+user_email varchar(50),
+user_password varchar(20)
+);
+
+mysql> delete FROM user where user_email ="hello@gmail.com";
+
+
+create flight(id, flight_number, from, to, date, price)
+
+create table flight(
+id int primary key auto_increment,
+flight_number varchar(6),
+source varchar(20),
+destination varchar(20),
+flight_date date,
+price double
+);
+
+INSERT INTO flight(flight_number, source , destination, flight_date, price)
+ VALUES("f101","MUMBAI","TOKYO","2028-04-19" ,15000),
+ ("AI102","MUMBAI","TOKYO","2028-04-19" ,16000),("MA103","MUMBAI","Pune","2028-04-19" ,3000);
+ 
+ 
+mysql> select * from flights;
+ERROR 1146 (42S02): Table 'air_ticket_reservation_system.flights' doesn't exist
+mysql> select * from flight;
++----+---------------+--------+-------------+-------------+-------+
+| id | flight_number | source | destination | flight_date | price |
++----+---------------+--------+-------------+-------------+-------+
+|  1 | f101          | MUMBAI | TOKYO       | 2028-04-19  | 15000 |
+|  2 | AI102         | MUMBAI | TOKYO       | 2028-04-19  | 16000 |
+|  3 | MA103         | MUMBAI | Pune        | 2028-04-19  |  3000 |
++----+---------------+--------+-------------+-------------+-------+
+3 rows in set (0.01 sec)
+
+
+booking(id, user_id, flight_id, booking_date)  ========= user_id and flight_id are foreign key from user and flight table.
+// default constraint 
+
+create table booking(
+id int primary key auto_increment,
+user_id int,
+flight_id int,
+booking_date date default (current_date),
+FOREIGN KEY (user_id) REFERENCES user(user_id),
+FOREIGN KEY (flight_id) REFERENCES flight(id)
+);
+

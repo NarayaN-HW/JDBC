@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="example.spring.core.WelcomeService" id="springBean" />
+
+	<bean class="example.spring.core.HelloService" id="springBean2" />
+
+	<bean class="example.spring.core.UserService" id="springBean3">
+		<property name="name" value="nar"></property>
+		<property name="message" value="Message->SHIVAYA"></property>
+		<property name="age" value="23"></property>
+	</bean>
+
+	<bean class="example.spring.core.UserService" id="springBean4">
+		<constructor-arg value="55" index="2"/>
+		<constructor-arg value="Yana" />
+		<constructor-arg value="😎😳" />
+		
+	</bean>
+</beans>
