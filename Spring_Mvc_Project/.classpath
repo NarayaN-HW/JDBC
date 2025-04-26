@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="target/generated-sources/annotations">
+		<attributes>
+			<attribute name="ignore_optional_problems" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="m2e-apt" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="target/generated-test-sources/test-annotations">
+		<attributes>
+			<attribute name="ignore_optional_problems" value="true"/>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="m2e-apt" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v10.1">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/CDAC/Desktop/n/dependancy/micrometer-commons-1.12.11.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CDAC/Desktop/n/dependancy/micrometer-observation-1.12.11.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CDAC/Desktop/n/dependancy/spring-aop-6.1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CDAC/Desktop/n/dependancy/spring-beans-6.1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CDAC/Desktop/n/dependancy/spring-context-6.1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CDAC/Desktop/n/dependancy/spring-core-6.1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CDAC/Desktop/n/dependancy/spring-expression-6.1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CDAC/Desktop/n/dependancy/spring-jcl-6.1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CDAC/Desktop/n/dependancy/spring-web-6.1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CDAC/Desktop/n/dependancy/spring-webmvc-6.1.14.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

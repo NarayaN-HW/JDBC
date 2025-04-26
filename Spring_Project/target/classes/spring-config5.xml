@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    
+	<!-- this bean is AutoWIred bean if multiple class present same name so 
+		primary="true" -->
+
+	<bean class="example.spring.core2.autowiring.Tyre" id="tyrebean"
+		primary="true">
+		<property name="make" value="BridgeStone"></property>
+		<property name="type" value="Tubeless"></property>
+	</bean>
+
+	
+<bean class="example.spring.core2.autowiring.Tyre" id="tyrebean2"
+		>
+		<property name="make" value="BridgeStone"></property>
+		<property name="type" value="Tubeless"></property>
+	</bean>
+
+
+
+	<bean class="example.spring.core2.autowiring.Engine"
+		id="enginebean">
+		<property name="power" value="20000 horsePower"></property>
+		<property name="type" value="mustang"></property>
+	</bean>
+
+	<bean class="example.spring.core2.autowiring.Car" id="carbean"
+		autowire="byType">
+		<property name="carId" value="c01"></property>
+		<property name="make" value="ford GT"></property>
+		<property name="model" value="ford"></property>
+		<!-- Not injecting properties: typeDetails and engineDetails Using auto 
+			writing -->
+	</bean>
+</beans>

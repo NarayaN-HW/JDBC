@@ -1,0 +1,145 @@
+--- MENU  ---
+0 : eixt 
+1 : Add Article 
+2 : Display all 
+3 : Get by Id 
+4 : Delete by Id
+ 5 : Update article
+choose 
+
+2
+Get all Article
+
+Article [id=1, name=narayan, category=PAINTING, Date_created=2025-04-12, cratorName=hello]
+Article [id=2, name=shiva, category=SCULPTURE, Date_created=2025-05-20, cratorName=parvati]
+Article [id=3, name=hello, category=PAINTING, Date_created=2025-05-12, cratorName=hel]
+--- MENU  ---
+0 : eixt 
+1 : Add Article 
+2 : Display all 
+3 : Get by Id 
+4 : Delete by Id
+ 5 : Update article
+choose 
+
+3
+get one Article
+
+Enter id: 
+1
+Article [id=1, name=narayan, category=PAINTING, Date_created=2025-04-12, cratorName=hello]
+--- MENU  ---
+0 : eixt 
+1 : Add Article 
+2 : Display all 
+3 : Get by Id 
+4 : Delete by Id
+ 5 : Update article
+choose 
+
+3
+get one Article
+
+Enter id: 
+2
+Article [id=2, name=shiva, category=SCULPTURE, Date_created=2025-05-20, cratorName=parvati]
+--- MENU  ---
+0 : eixt 
+1 : Add Article 
+2 : Display all 
+3 : Get by Id 
+4 : Delete by Id
+ 5 : Update article
+choose 
+
+3
+get one Article
+
+Enter id: 
+3
+Article [id=3, name=hello, category=PAINTING, Date_created=2025-05-12, cratorName=hel]
+--- MENU  ---
+0 : eixt 
+1 : Add Article 
+2 : Display all 
+3 : Get by Id 
+4 : Delete by Id
+ 5 : Update article
+choose 
+
+4
+delete Article
+
+Enter id: 
+3
+1 article(s) deleted.
+Student removed successfully.
+--- MENU  ---
+0 : eixt 
+1 : Add Article 
+2 : Display all 
+3 : Get by Id 
+4 : Delete by Id
+ 5 : Update article
+choose 
+
+1
+Add Article
+
+Enter article name, Catogery(PAINTING, SCULPTURE, ARTIFACT),  Created date, creator name: 
+narayanPatil
+SCULPTURE
+2025-05-05
+SHIVA
+1 numbers of record added
+Article added successfully narayanPatil
+--- MENU  ---
+0 : eixt 
+1 : Add Article 
+2 : Display all 
+3 : Get by Id 
+4 : Delete by Id
+ 5 : Update article
+choose 
+
+5
+update Article
+
+Enter article ID: 
+2
+Enter updated article name: 
+nevdu
+Enter updated category (PAINTING, SCULPTURE, ARTIFACT): 
+SCULPTURE
+Enter updated created date (yyyy-mm-dd): 
+2025-04-19
+Enter updated creator name: 
+Parvati
+1 article(s) updated.
+Article updated successfully.
+--- MENU  ---
+0 : eixt 
+1 : Add Article 
+2 : Display all 
+3 : Get by Id 
+4 : Delete by Id
+ 5 : Update article
+choose 
+
+2
+Get all Article
+
+Article [id=1, name=narayan, category=PAINTING, Date_created=2025-04-12, cratorName=hello]
+Article [id=2, name=nevdu, category=SCULPTURE, Date_created=2025-04-19, cratorName=Parvati]
+Article [id=4, name=narayanPatil, category=SCULPTURE, Date_created=2025-05-05, cratorName=SHIVA]
+--- MENU  ---
+0 : eixt 
+1 : Add Article 
+2 : Display all 
+3 : Get by Id 
+4 : Delete by Id
+ 5 : Update article
+choose 
+
+0
+thankyou trial

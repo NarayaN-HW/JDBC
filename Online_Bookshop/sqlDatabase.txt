@@ -1,0 +1,52 @@
+mysql> create database online_bookshop;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> use online_bookshop;
+Database changed
+
+mysql> show tables;
++---------------------------+
+| Tables_in_online_bookshop |
++---------------------------+
+| author_master             |
+| book_master               |
++---------------------------+
+2 rows in set (0.00 sec)
+
+mysql> select * from author_master;
++----------+----------------+----------------+-------------------+
+| authorId | author_name    | author_country | author_email      |
++----------+----------------+----------------+-------------------+
+|        1 | shivaji savant | India          | shivaji@gmail.com |
++----------+----------------+----------------+-------------------+
+1 row in set (0.00 sec)
+
+mysql> select * from book_master;
++--------+-----------------+--------+-------------+
+| bookId | publicationYear | title  | book_author |
++--------+-----------------+--------+-------------+
+|      1 |            2025 | Chaava |        NULL |
++--------+-----------------+--------+-------------+
+1 row in set (0.00 sec)
+
+
+
+
+mysql> select * from book_master;
++--------+-----------------+---------------+-------------+
+| bookId | publicationYear | title         | book_author |
++--------+-----------------+---------------+-------------+
+|      1 |            2025 | Chaava        |        NULL |
+|      2 |            1990 | shivpuran     |        NULL |
+|      3 |            1990 | ramayana      |           2 |
+|      4 |            2025 | fiftyshades   |           3 |
+|      5 |            2025 | wings of fire |           4 |
++--------+-----------------+---------------+-------------+
+5 rows in set (0.00 sec)
+
+mysql> truncate table from book_master where book_author=null;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from book_master where book_author=null' at line 1
+mysql>
+mysql>
+mysql>
+mysql> DELETE FROM book_master WHERE book_author IS NULL;

@@ -1,6 +1,0 @@
-use cdac;
-create table department(
-deptno int primary key,
-dname varchar(20),
-location varchar(20)
-);

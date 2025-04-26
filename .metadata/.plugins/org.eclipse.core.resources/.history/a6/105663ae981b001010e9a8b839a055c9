@@ -1,7 +1,0 @@
-package exception;
-
-public class ResourceNotFoundArticle extends RuntimeException {
-	public ResourceNotFoundArticle(Stirng msg) {
-		super(msg);
-	}
-}
