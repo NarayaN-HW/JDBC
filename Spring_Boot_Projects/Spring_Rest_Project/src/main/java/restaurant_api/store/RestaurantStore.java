@@ -23,8 +23,20 @@ public class RestaurantStore {
 
 	}
 
+	// get all restaurant
 	public static Collection<Restaurant> getAllRestaurent() {
 		Collection<Restaurant> restCollection = allrest.values();
 		return restCollection;
+	}
+
+	// get One Restaurant
+	public static Restaurant getOneRestaurent(String restId) {
+		Restaurant foundRestId = allrest.get(restId);
+		return foundRestId;
+	}
+	
+	// Post create Restaurant
+	public static void createNewRestaurant(Restaurant restaurantObject) {
+		allrest.put(restaurantObject.getRestaurantId(), restaurantObject);
 	}
 }
